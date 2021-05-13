@@ -6,15 +6,19 @@ h1 {
   text-align: center;
   font-family: 'Space Grotesk', sans-serif;
   font: weight 300;
-  font-size: 500% !important;
-  text-align: center; }
+  font-size: 500%;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%; }
 
 h2 {
   text-align: center;
   color: #571aff;
   font-family: 'Space Grotesk', sans-serif;
   font: weight 300 !important;
-  text-align: center; }
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%; }
 
 p {
   color: #ffffff;
@@ -32,6 +36,12 @@ p {
 
 .nav__background-nav {
   background-color: #1c1c1c; }
+
+.nav__animation {
+  transition: 0.5s; }
+
+.nav__animation:hover {
+  transform: scale(1.1); }
 
 .acordeon {
   background-color: #ff5b00; }
@@ -71,6 +81,10 @@ p {
   padding-bottom: 5%;
   align-content: center;
   text-align: center; }
+  .footer p {
+    font-size: 140%;
+    padding-left: 2%;
+    padding-right: 2%; }
 
 .footer__div {
   align-items: center;
@@ -144,24 +158,24 @@ aside {
 
 @media screen and (min-width: 480px) {
   h1, h2 {
-    font-size: 500%; } }
+    font-size: 600%; } }
 
 @media screen and (min-width: 481px) and (max-width: 600px) {
   h1, h2 {
-    font-size: 200%; } }
+    font-size: 400%; } }
 
 @media screen and (min-width: 601px) {
-  h1.h2 {
-    font-size: 50%; } }
+  h1, h2 {
+    font-size: 400%; } }
 
-@media screen and (min-width: 601px) and (min-width: 480px) {
+@media screen and (min-width: 480px) {
   p {
     font-size: 250%; } }
 
-@media screen and (min-width: 601px) and (min-width: 481px) and (max-width: 600px) {
+@media screen and (min-width: 481px) and (max-width: 600px) {
   p {
     font-size: 200%; } }
 
-@media screen and (min-width: 601px) and (min-width: 601px) {
+@media screen and (min-width: 601px) {
   p {
-    font-size: 110%; } }
+    font-size: 100%; } }

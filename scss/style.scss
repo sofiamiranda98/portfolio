@@ -7,8 +7,10 @@ h1 {
     text-align: center;
     font-family: 'Space Grotesk', sans-serif;
     font: weight 300;
-    font-size: 500% !important;
+    font-size: 500%;
     text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 h2 {
@@ -17,6 +19,8 @@ h2 {
     font-family: 'Space Grotesk', sans-serif;
     font: weight 300 !important;
     text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 p {
@@ -25,6 +29,8 @@ p {
     font: weight 300px;
     text-align: center;
 }
+
+
 
 
 .nav {
@@ -41,8 +47,14 @@ p {
     background-color: #1c1c1c;
 }
 
+.nav__animation {
+    transition: 0.5s; 
+}
 
+.nav__animation:hover {
+    transform: scale(1.1)
 
+ }
 
 .acordeon {
     @extend .nav;
@@ -60,6 +72,10 @@ p {
 }
 
 
+
+
+
+
 .formulario {
     border-top:solid 1px white;	
     border-right:solid 1px white;
@@ -71,6 +87,8 @@ p {
 .formulario__cajas {
    color: white;
 }
+
+
 
 
 .aboutme__div{
@@ -85,6 +103,9 @@ p {
     text-align: left !important;}
 
 
+
+
+
 $espacio:10%;
 
 .footer {
@@ -95,6 +116,13 @@ $espacio:10%;
     padding-bottom: $espacio/2;
     align-content: center;
     text-align: center;
+    
+    p{
+        font-size: 140%;
+        padding-left:2% ;
+        padding-right:2%;
+    }
+
 }
 
 .footer__div {
@@ -106,6 +134,9 @@ $espacio:10%;
 .footer__div__imagefooter { 
    width: 40px;
 }
+
+
+
 
 
 #grad {
@@ -203,24 +234,23 @@ aside {
  }
 
 
-{
 $tamañoletra:100%;
 
  @media screen and (min-width: 480px) {
 	h1,h2 {
-		font-size:$tamañoletra*5 ;
+		font-size:$tamañoletra*6 ;
 	}
 }
 
 @media screen and (min-width: 481px) and (max-width: 600px) {
 	h1,h2 {
-		font-size:$tamañoletra*2;
+		font-size:$tamañoletra*4;
 	}
 }
 
 @media screen and (min-width: 601px) {
 	h1,h2 {
-		font-size: $tamañoletra/2;
+		font-size: $tamañoletra*4;
 	}
 }
 
@@ -241,7 +271,4 @@ $tamañoletra:100%;
         p {
             font-size: $tamañoletra;
         }
-
-
-        } }
     }
